@@ -37,8 +37,32 @@ console.log(jsuser.greetingTwo())
 
 //functions
 function addTwoNumbers(num1, num2){
- console.log(num1+num2)
+    return num1+num2
 }
-addTwoNumbers(3,4)
+console.log(addTwoNumbers(3,33))
 
+
+const object = {
+    user:"nameone", 
+    id : 123,
+
+}
+function funcs(paran){
+    console.log(`Username is ${paran.user} and number is ${paran.id}`);
+
+}
+funcs(object);
+
+//++++++++++++++++++++++++++++++++++++++++++++
+const user = {
+    username: "Dotted",
+    price: 999,
+   welcomeMessage:function(){
+    console.log(`My username id ${this.username} and price is ${this.price}`)
+     
+   }
+  
+
+}
+user.welcomeMessage()
 
